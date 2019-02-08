@@ -61,7 +61,7 @@ public class HTMLFormatter {
     }
 
     private String getMainPartStructure() {
-        String path = getClass().getResource("/resources/html/dataBlockHTML/MainStructure.html").getFile();
+        String path = getClass().getResource("/resources/html/dataBlockHTML/MethodStructure.html").getFile();
         String data = readData(path);
         return  data;
     }

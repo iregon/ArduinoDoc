@@ -1,5 +1,6 @@
 package services.documentation;
 
+import services.documentation.HTMLFormatter.DocumentationHTMLGenerator;
 import services.documentation.HTMLFormatter.HTMLFormatter;
 import services.dataStorage.DiskOperation;
 
@@ -53,39 +54,13 @@ public class Documentation {
 	}
 
 	public String getHTMLVersion() {
-		StringBuilder doc = new StringBuilder();
-
-		doc.append("<html>");
-		doc.append(getHTMLHeadTag());
-		doc.append("<body>");
-
-		for (DataBlock dataBlock : blocks) {
-			doc.append(new HTMLFormatter(dataBlock).getHTML());
-		}
-
-		doc.append("</body></html>");
-
-		return doc.toString();
+		DocumentationHTMLGenerator generator = new DocumentationHTMLGenerator(blocks);
+		String html = generator.getHTML();
+		return html;
 	}
 
-	private String getHTMLHeadTag() {
-		StringBuilder data = new StringBuilder();
-		data.append("<head><style>");
-		data.append(getHTMLStyle());
-		data.append("</style></head>");
 
-		return data.toString();
-	}
 
-	private String getHTMLStyle() {
-		String path = getClass().getResource("/resources/html/dataBlockHTML/MainStyle.css").getFile();
-		String data = readData(path);
-		return  data;
-	}
 
-	private String readData(String path) {
-		String text = new DiskOperation().readData(path);
-		return text;
-	}
 
 }
