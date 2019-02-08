@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+. {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #666;
+}
+
+/*
+######################################################
+################### MainStructure ####################
+######################################################
+ */
+
+.mainContainer {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border-left: 5px solid #5e93ff;
+}
+
+.methodName {
+    margin-top: 0;
+}
+
+/*
+############################################################
+################### ParametersStructure ####################
+############################################################
+ */
+
+.parametersContainer {
+    margin-left: 10px;
+}
+
+/*
+#########################################################
+################### ReturnsStructure ####################
+#########################################################
+ */
+
+.returnsContainer {
+    margin-left: 10px;
+}

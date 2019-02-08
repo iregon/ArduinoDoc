@@ -1,6 +1,7 @@
 package services.documentation;
 
 import services.documentation.HTMLFormatter.HTMLFormatter;
+import services.dataStorage.DiskOperation;
 
 import java.util.ArrayList;
 
@@ -54,7 +55,9 @@ public class Documentation {
 	public String getHTMLVersion() {
 		StringBuilder doc = new StringBuilder();
 
-		doc.append("<html><body>");
+		doc.append("<html>");
+		doc.append(getHTMLHeadTag());
+		doc.append("<body>");
 
 		for (DataBlock dataBlock : blocks) {
 			doc.append(new HTMLFormatter(dataBlock).getHTML());
@@ -63,6 +66,26 @@ public class Documentation {
 		doc.append("</body></html>");
 
 		return doc.toString();
+	}
+
+	private String getHTMLHeadTag() {
+		StringBuilder data = new StringBuilder();
+		data.append("<head><style>");
+		data.append(getHTMLStyle());
+		data.append("</style></head>");
+
+		return data.toString();
+	}
+
+	private String getHTMLStyle() {
+		String path = getClass().getResource("/resources/html/dataBlockHTML/MainStyle.css").getFile();
+		String data = readData(path);
+		return  data;
+	}
+
+	private String readData(String path) {
+		String text = new DiskOperation().readData(path);
+		return text;
 	}
 
 }
