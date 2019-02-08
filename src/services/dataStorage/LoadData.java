@@ -2,6 +2,6 @@ package services.dataStorage;
 
 public interface LoadData {
 	
-	public String read(String path);
+	String read(String path);
 	
 }

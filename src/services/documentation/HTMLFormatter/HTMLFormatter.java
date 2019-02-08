@@ -25,6 +25,7 @@ public class HTMLFormatter {
 
         return main;
     }
+
     private String generateMainPart() {
         String mainStructure = getMainPartStructure();
 

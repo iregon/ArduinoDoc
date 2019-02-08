@@ -149,7 +149,7 @@ public class DataBlock {
 			if(lines[i].contains("@param")) {
 				String line = normalizeString(lines[i]);
 				int splitIndex = line.indexOf(" ");
-				p.add(new Parameter(line.substring(0, splitIndex), line.substring(splitIndex + 1, line.length())));
+				p.add(new Parameter(line.substring(0, splitIndex), line.substring(splitIndex + 1)));
 			}
 		}
 		
@@ -163,7 +163,7 @@ public class DataBlock {
 			if(lines[i].contains("@return")) {
 				String line = normalizeString(lines[i]);
 				int splitIndex = line.indexOf(" ");
-				r = line.substring(splitIndex + 1, line.length());
+				r = line.substring(splitIndex + 1);
 			}
 		}
 		
