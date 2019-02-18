@@ -15,19 +15,24 @@ public class HTMLFormatter {
         return assemblyParts();
     }
 
-    public String assemblyParts() {
-        String main =  generateMainPart();
+    // TODO: aggiungere structure
+    public String getHTMLOnlyMethodName() {
+        return "<p>" + datablock.getMethodName() + "</p>";
+    }
+
+    private String assemblyParts() {
+        String method =  generateMethodPart();
         String params = generateParametersPart();
         String returns = generateReturnsPart();
 
-        main = main.replace("{{PARAMETERS}}", params);
-        main = main.replace("{{RETURNS}}", returns);
+        method = method.replace("{{PARAMETERS}}", params);
+        method = method.replace("{{RETURNS}}", returns);
 
-        return main;
+        return method;
     }
 
-    private String generateMainPart() {
-        String mainStructure = getMainPartStructure();
+    private String generateMethodPart() {
+        String mainStructure = getMethodPartStructure();
 
         mainStructure = mainStructure.replace("{{METHOD_NAME}}", datablock.getMethodName());
         mainStructure = mainStructure.replace("{{METHOD_DESCRIPTION}}", datablock.getDescription());
@@ -60,7 +65,7 @@ public class HTMLFormatter {
         return structure;
     }
 
-    private String getMainPartStructure() {
+    private String getMethodPartStructure() {
         String path = getClass().getResource("/resources/html/dataBlockHTML/MethodStructure.html").getFile();
         String data = readData(path);
         return  data;

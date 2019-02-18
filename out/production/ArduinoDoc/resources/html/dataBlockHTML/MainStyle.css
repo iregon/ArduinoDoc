@@ -8,6 +8,30 @@ body {
     background-color: #666;
 }
 
+p {
+    margin: 3px;
+}
+
+/*
+######################################################
+################### MainStructure ####################
+######################################################
+ */
+
+h1.title {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 3px 3px 3px 5px;
+}
+
+div.summary {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /*
 ########################################################
 ################### MethodStructure ####################
