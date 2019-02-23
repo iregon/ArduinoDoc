@@ -4,6 +4,8 @@ import services.dataStorage.DiskOperation;
 import services.documentation.DataBlock;
 import services.documentation.Parameter;
 
+import java.util.ArrayList;
+
 public class HTMLFormatter {
     DataBlock datablock;
 
@@ -43,11 +45,13 @@ public class HTMLFormatter {
     private String generateParametersPart() {
         StringBuilder params = new StringBuilder();
         String structure = getParametersStructure();
+        ArrayList<Parameter> parameters = datablock.getParams();
 
         if(datablock.getParams().size() == 0) return "";
 
-        for (Parameter param : datablock.getParams()) {
-            params.append(param.getName() + " - " + param.getDescription());
+        for(int i = 0; i < parameters.size(); i++) {
+            if (i < parameters.size() - 1) params.append(parameters.get(i).getName() + " - " + parameters.get(i).getDescription() + "<br>");
+            else params.append(parameters.get(i).getName() + " - " + parameters.get(i).getDescription());
         }
 
         structure = structure.replace("{{PARAMETERS}}", params.toString());
