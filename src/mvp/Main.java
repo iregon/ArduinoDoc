@@ -5,7 +5,9 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import services.translation.Translation;
 
 public class Main extends Application {
 
@@ -38,7 +40,8 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         stage.setScene(new Scene(rootNode));
-        stage.setTitle(WINDOW_TITLE);
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/icon.png")));
+        stage.setTitle(Translation.getInstance().getString("windowName"));
         stage.setMinHeight(MIN_WINDOWS_HEIGHT);
         stage.setMinWidth(MIN_WINDOW_WIDTH);
         stage.show();
