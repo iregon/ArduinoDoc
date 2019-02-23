@@ -50,8 +50,12 @@ public class HTMLFormatter {
         if(datablock.getParams().size() == 0) return "";
 
         for(int i = 0; i < parameters.size(); i++) {
-            if (i < parameters.size() - 1) params.append(parameters.get(i).getName() + " - " + parameters.get(i).getDescription() + "<br>");
-            else params.append(parameters.get(i).getName() + " - " + parameters.get(i).getDescription());
+            Parameter currentParam = parameters.get(i);
+            String textToAppend = currentParam.getName() + " - " + currentParam.getDescription();
+
+            if (i < parameters.size() - 1) textToAppend += "<br>";
+
+            params.append(textToAppend);
         }
 
         structure = structure.replace("{{PARAMETERS}}", params.toString());
