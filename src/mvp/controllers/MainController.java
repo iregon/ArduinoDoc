@@ -1,12 +1,12 @@
 package mvp.controllers;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.web.WebView;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import services.translation.Translation;
 
 public class MainController {
 
@@ -15,7 +15,29 @@ public class MainController {
     @FXML private TextArea arduinoCodeTextArea;
     @FXML private WebView previewWebView;
 
-    public MainController() {}
+    @FXML private Button loadFileButton;
+    @FXML private Button outputPathButton;
+    @FXML private Label arduinoCodeLabel;
+    @FXML private Label documentationPreviewLabel;
+    @FXML private Button generateDocumentationButton;
+    @FXML private Button exportDocumentationButton;
+    @FXML private Label inputFileLabel;
+    @FXML private Label outputPathLabel;
+
+    public MainController() {
+        Platform.runLater(() -> translateGUIElements());
+    }
+
+    private void translateGUIElements() {
+        loadFileButton.setText(Translation.getInstance().getString("inputFileButton"));
+        outputPathButton.setText(Translation.getInstance().getString("outputPathButton"));
+        arduinoCodeLabel.setText(Translation.getInstance().getString("arduinoCodeLabel"));
+        documentationPreviewLabel.setText(Translation.getInstance().getString("documentationPreviewLabel"));
+        generateDocumentationButton.setText(Translation.getInstance().getString("generateDocumentationButton"));
+        exportDocumentationButton.setText(Translation.getInstance().getString("exportDocumentationButton"));
+        inputFileLabel.setText(Translation.getInstance().getString("inputFileLabel"));
+        outputPathLabel.setText(Translation.getInstance().getString("outputPathLabel"));
+    }
 
     @FXML
     private void loadFile(MouseEvent event) {

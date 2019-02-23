@@ -17,7 +17,6 @@ public class DocumentationHTMLGenerator {
 
     public String getHTML() {
         String html = composeHTML();
-        System.out.println(html);
         return html;
     }
 
@@ -37,30 +36,9 @@ public class DocumentationHTMLGenerator {
     public String getMainStructure() {
         String path = getClass().getResource("/resources/html/dataBlockHTML/MainStructure.html").getFile();
         String data = readData(path);
-        return  data;
-    }
-    /*
-    public String getHTML() {
-        structure.append("<html>");
-        structure.append(getHTMLHeadTag());
-        structure.append("<body>");
-
-        structure.append(getMethodSummaryBlock());
-        structure.append(getMethodDetailBlock());
-
-        structure.append("</body></html>");
-        return structure.toString();
+        return data;
     }
 
-    private String getHTMLHeadTag() {
-        StringBuilder data = new StringBuilder();
-        data.append("<head><style>");
-        data.append(getHTMLStyle());
-        data.append("</style></head>");
-
-        return data.toString();
-    }
-*/
     private String getHTMLStyle() {
         String path = getClass().getResource("/resources/html/dataBlockHTML/MainStyle.css").getFile();
         String data = readData(path);

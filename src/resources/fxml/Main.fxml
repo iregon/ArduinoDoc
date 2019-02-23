@@ -25,12 +25,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Label text="Input file:" />
-                <Label text="Output path:" GridPane.rowIndex="1" />
+                <Label fx:id="inputFileLabel" text="Input file:" />
+                <Label fx:id="outputPathLabel" text="Output path:" GridPane.rowIndex="1" />
                 <TextField fx:id="inputFileTextField" GridPane.columnIndex="1" />
                 <TextField fx:id="outputPathTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <Button mnemonicParsing="false" onMouseClicked="#loadFile" text="Browse..." GridPane.columnIndex="2" />
-                <Button mnemonicParsing="false" onMouseClicked="#loadOutputPath" text="Browse..." GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button fx:id="loadFileButton" mnemonicParsing="false" onMouseClicked="#loadFile" text="Browse..." GridPane.columnIndex="2" />
+                <Button fx:id="outputPathButton" mnemonicParsing="false" onMouseClicked="#loadOutputPath" text="Browse..." GridPane.columnIndex="2" GridPane.rowIndex="1" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -56,7 +56,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
                     </rowConstraints>
                     <children>
-                        <Label text="Arduino code" />
+                        <Label fx:id="arduinoCodeLabel" text="Arduino code" />
                         <TextArea fx:id="arduinoCodeTextArea" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
                     </children>
                 </GridPane>
@@ -69,7 +69,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
                     </rowConstraints>
                     <children>
-                        <Label text="Documentation preview" />
+                        <Label fx:id="documentationPreviewLabel" text="Documentation preview" />
                         <WebView fx:id="previewWebView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
                     </children>
                 </GridPane>
@@ -82,8 +82,8 @@
     <bottom>
         <HBox alignment="CENTER_RIGHT" prefWidth="700.0" spacing="5.0" BorderPane.alignment="CENTER_RIGHT">
             <children>
-                <Button mnemonicParsing="false" onMouseClicked="#generateDocumentation" text="Generate" />
-                <Button mnemonicParsing="false" onMouseClicked="#exportDocumentation" text="Export" />
+                <Button fx:id="generateDocumentationButton" mnemonicParsing="false" onMouseClicked="#generateDocumentation" text="Generate" />
+                <Button fx:id="exportDocumentationButton" mnemonicParsing="false" onMouseClicked="#exportDocumentation" text="Export" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

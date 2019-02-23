@@ -15,7 +15,7 @@ public class Translation {
 
     private Translation() {
         Locale location = new Locale(Locale.getDefault().getLanguage(), Locale.getDefault().getCountry());
-        messages = ResourceBundle.getBundle("resources/translation/messagesBundle/MessagesBundle", location);
+        messages = ResourceBundle.getBundle("resources/translation/messagesBundle/LanguagePack", location);
     }
 
     public String getString(String key) {

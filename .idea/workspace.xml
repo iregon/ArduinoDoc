@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArduinoDoc/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArduinoDoc/resources/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvp/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvp/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/translation/messagesBundle/MessagesBundle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/documentation/HTMLFormatter/DocumentationHTMLGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/documentation/HTMLFormatter/DocumentationHTMLGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/translation/Translation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/translation/Translation.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,30 +73,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mvp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/services/translation/Translation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="463">
+              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/translation/messagesBundle/LanguagePack.properties">
+          <provider selected="true" editor-type-id="ResourceBundle" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/fxml/Main.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="149">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -96,8 +102,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mvp/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="191">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,8 +144,6 @@
         <option value="$PROJECT_DIR$/src/mvp/controllers/SaveFileController.java" />
         <option value="$PROJECT_DIR$/src/mvp/controllers/SavePathController.java" />
         <option value="$PROJECT_DIR$/src/mvp/controllers/LoadFileController.java" />
-        <option value="$PROJECT_DIR$/src/mvp/Main.java" />
-        <option value="$PROJECT_DIR$/src/mvp/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/mvp/controllers/GenerateDocumentationController.java" />
         <option value="$PROJECT_DIR$/src/resources/html/DataBlockHTMLStructure" />
         <option value="$PROJECT_DIR$/src/resources/html/DataBlockHTMLStructure.html" />
@@ -145,9 +153,15 @@
         <option value="$PROJECT_DIR$/src/resources/html/dataBlockHTML/ParametersStructure.html" />
         <option value="$PROJECT_DIR$/src/services/documentation/Documentation.java" />
         <option value="$PROJECT_DIR$/src/services/documentation/HTMLFormatter/HTMLFormatter.java" />
-        <option value="$PROJECT_DIR$/src/services/documentation/HTMLFormatter/DocumentationHTMLGenerator.java" />
         <option value="$PROJECT_DIR$/src/resources/html/dataBlockHTML/MainStructure.html" />
+        <option value="$PROJECT_DIR$/src/mvp/Main.java" />
+        <option value="$PROJECT_DIR$/src/services/documentation/HTMLFormatter/DocumentationHTMLGenerator.java" />
         <option value="$PROJECT_DIR$/src/resources/html/dataBlockHTML/MainStyle.css" />
+        <option value="$PROJECT_DIR$/src/resources/translation/messagesBundle/MessagesBundle_it_IT.properties" />
+        <option value="$PROJECT_DIR$/src/resources/translation/messagesBundle/MessagesBundle.properties" />
+        <option value="$PROJECT_DIR$/src/services/translation/Translation.java" />
+        <option value="$PROJECT_DIR$/src/resources/translation/messagesBundle/LanguagePack_it_IT.properties" />
+        <option value="$PROJECT_DIR$/src/mvp/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/resources/fxml/Main.fxml" />
       </list>
     </option>
@@ -223,7 +237,30 @@
               <item name="ArduinoDoc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArduinoDoc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="messagesBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'LanguagePack'" type="a6c14932:ResourceBundleNode" />
+            </path>
+            <path>
+              <item name="ArduinoDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArduinoDoc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArduinoDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArduinoDoc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="documentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArduinoDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArduinoDoc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="HTMLFormatter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ArduinoDoc" type="b2602c69:ProjectViewProjectNode" />
@@ -255,7 +292,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550940144429" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550945072736" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -265,18 +302,21 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources\html\dataBlockHTML" />
-      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources\html" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources\translation\messagesBundle" />
       <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources\temp" />
       <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src" />
       <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\services\dataStorage" />
       <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\mvp\controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources" />
+      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\services" />
+      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources\html\dataBlockHTML" />
+      <recent name="C:\Users\Alessandro\IdeaProjects\ArduinoDoc\src\resources\html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -401,12 +441,12 @@
       <workItem from="1549656574032" duration="4200000" />
       <workItem from="1549732820502" duration="1065000" />
       <workItem from="1550512284657" duration="2603000" />
-      <workItem from="1550939787565" duration="235000" />
+      <workItem from="1550939787565" duration="4093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23509000" />
+    <option name="totallyTimeSpent" value="27364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,12 +459,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.21276596" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.21276596" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Favorites" order="6" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32850242" />
@@ -432,7 +473,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.25925925" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.25925925" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -590,23 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/html/dataBlockHTML/MainStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/documentation/HTMLFormatter/DocumentationHTMLGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/documentation/Documentation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -617,35 +641,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/documentation/HTMLFormatter/DocumentationHTMLGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/html/dataBlockHTML/MainStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/translation/Translation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/translation/messagesBundle/LanguagePack_it_IT.properties">
+      <provider selected="true" editor-type-id="ResourceBundle" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/translation/messagesBundle/LanguagePack.properties">
+      <provider selected="true" editor-type-id="ResourceBundle" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mvp/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+        <state relative-caret-position="191">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/fxml/Main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/translation/Translation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="149">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
         </state>
       </provider>
     </entry>
