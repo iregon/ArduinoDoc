@@ -12,7 +12,7 @@ Before the start of a function insert a comment in the following way:
  */
 ```
 
-you can also insert a description for all the paramaters of the function with the tag ```@param ```:
+you can also insert a description for all the paramaters of the function with the tag ```@param``` :
 
 ```cpp
 /*
@@ -24,7 +24,7 @@ you can also insert a description for all the paramaters of the function with th
  */
 ```
 
-and a description for the returned value with the tag ```@return ```:
+and a description for the returned value with the tag ```@return``` :
 
 ```cpp
 /*
