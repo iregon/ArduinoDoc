@@ -47,7 +47,7 @@ Multiple tags are allowed:
  */
 ```
 
-Attention: function without at least a description will be ignored.
+<b>Attention: function without at least a description will be ignored.</b>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
